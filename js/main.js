@@ -5,3 +5,7 @@ function togglePopup(){
 function togglePopup2(){
   document.getElementById("popup-2").classList.toggle("active2");
 }
+
+function windowsalert(){
+  window.alert("Sorry! This Button was still under construction...!!!");
+}

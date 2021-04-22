@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Design Your Cybertruck | Tesla</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" /> 
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/popup.css">
     <link rel="stylesheet" href="./css/popup2.css">
@@ -111,7 +112,7 @@
     <div class="main-content">
       <p class="main-content-heading">ORDER CYBERTRUCK</p>
       <br><br><br>
-      <div class="active2 listItemsContainer">
+      <div class="active2 listItemsContainer" id="single_motor">
         <a href="#" class="main-content-prices" >SINGLE MOTOR RWD
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -121,7 +122,7 @@
         </a>
       </div>
       <br>
-      <div class="listItemsContainer">
+      <div class="listItemsContainer" id="dual_motor">
         <a href="#" class="main-content-prices" >DUAL MOTOR AWD
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -131,7 +132,7 @@
         </a>
       </div>
       <br>
-      <div class="listItemsContainer">
+      <div class="listItemsContainer" id="tri_motor">
         <a href="#" class="main-content-prices" >TRI MOTOR AWD
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -165,9 +166,48 @@
       <div class="listItemsContainer">
         <p> DUE TODAY
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;
           $100 
         </p>
+      </div>
+      <div>
+        <p>
+          Fully refundable. You will be able to complete your
+        </p>
+        <p>
+          configuration as production nears in late 2021.
+          <a id="change_the_data_click"></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="main-content4">
+      <div class="listItemsContainer">
+        <button onclick="windowsalert()">BUY NOW</button>
+      </div>
+    </div>
+
+    <div class="main-content5">
+      <div class="listItemsContainer">
+        <div class="bottom-container">
+          <p id="bottom_div1_1">
+          </p>
+          <p id="bottom_div1_2" class="bottom-container-text">
+          </p>
+        </div>
+        <div class="bottom-container">
+          <p id="bottom_div2_1">
+          </p>
+          <p id="bottom_div2_2" class="bottom-container-text">
+          </p>
+        </div>
+        <div class="bottom-container">
+          <p id="bottom_div3_1">
+          </p>
+          <p id="bottom_div3_2" class="bottom-container-text">
+          </p>
+        </div> 
       </div>
     </div>
 
@@ -179,8 +219,46 @@
     <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
+    document.getElementById("change_the_data_click").innerHTML = "Single<p>Motor RWD production is expected to begin in late</p><p> 2022.</p>";
+    document.getElementById("bottom_div1_1").innerHTML = "250+MI"
+    document.getElementById("bottom_div1_2").innerHTML = "RANGE (EPA EST.)"
+    document.getElementById("bottom_div2_1").innerHTML = "7,800+LBS"
+    document.getElementById("bottom_div2_2").innerHTML = "TOWING CAPACITY"
+    document.getElementById("bottom_div3_1").innerHTML = "<6.5s"
+    document.getElementById("bottom_div3_2").innerHTML = "0-60 MPH"
     $(document).on('click', '.main-content div', function(){
       $(this).addClass('active2').siblings().removeClass('active2')
+      console.error($(this)[0].id);
+      if($(this)[0].id=="single_motor")
+      {
+        document.getElementById("change_the_data_click").innerHTML = "Single<p>Motor RWD production is expected to begin in late</p><p> 2022.</p>";
+        document.getElementById("bottom_div1_1").innerHTML = "250+MI"
+        document.getElementById("bottom_div1_2").innerHTML = "RANGE (EPA EST.)"
+        document.getElementById("bottom_div2_1").innerHTML = "7,800+LBS"
+        document.getElementById("bottom_div2_2").innerHTML = "TOWING CAPACITY"
+        document.getElementById("bottom_div3_1").innerHTML = "<6.5s"
+        document.getElementById("bottom_div3_2").innerHTML = "0-60 MPH"
+      }
+      else if($(this)[0].id=="dual_motor")
+      {
+        document.getElementById("change_the_data_click").innerHTML = "Dual<p>Motor AWD production is expected to begin in late </p><p> 2021.</p>";
+        document.getElementById("bottom_div1_1").innerHTML = "300+MI"
+        document.getElementById("bottom_div1_2").innerHTML = "RANGE (EPA EST.)"
+        document.getElementById("bottom_div2_1").innerHTML = "10,000+LBS"
+        document.getElementById("bottom_div2_2").innerHTML = "TOWING CAPACITY"
+        document.getElementById("bottom_div3_1").innerHTML = "<4.5s"
+        document.getElementById("bottom_div3_2").innerHTML = "0-60 MPH"
+      }
+      else if($(this)[0].id=="tri_motor")
+      {
+        document.getElementById("change_the_data_click").innerHTML = "<p>Tri Motor AWD production is expected in late<p></p> 2021.</p>";
+        document.getElementById("bottom_div1_1").innerHTML = "500+MI"
+        document.getElementById("bottom_div1_2").innerHTML = "RANGE (EPA EST.)"
+        document.getElementById("bottom_div2_1").innerHTML = "14,000+LBS"
+        document.getElementById("bottom_div2_2").innerHTML = "TOWING CAPACITY"
+        document.getElementById("bottom_div3_1").innerHTML = "<2.9s"
+        document.getElementById("bottom_div3_2").innerHTML = "0-60 MPH"
+      }
     })
     </script>
 
