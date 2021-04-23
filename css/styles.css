@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100,300,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100,300,700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
 
-body{
+body {
   padding: 10px;
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@ header {
   align-items: center;
 }
 
-header .logo{
+header .logo {
   margin-left: 30px;
   margin-top: 5px;
 }
@@ -44,7 +44,7 @@ header ul li {
 }
 
 header ul li a {
-  cursor:pointer;
+  cursor: pointer;
   text-decoration: none;
   color: #fff;
   display: inline-block;
@@ -53,9 +53,8 @@ header ul li a {
   margin-top: 5px;
 }
 
-@media (max-width:1520px)
-{
-  body{
+@media only screen and (max-width: 1520px) {
+  body {
     padding: 10px;
     background-image: url(../images/background2.png);
     background-repeat: no-repeat;
@@ -65,9 +64,8 @@ header ul li a {
   }
 }
 
-@media (max-width:1390px)
-{
-  body{
+@media only screen and (max-width: 1390px) {
+  body {
     padding: 10px;
     background-image: url(../images/background3.png);
     background-repeat: no-repeat;
@@ -77,9 +75,8 @@ header ul li a {
   }
 }
 
-@media (max-width:1220px)
-{
-  body{
+@media only screen and (max-width: 1220px) {
+  body {
     padding: 10px;
     background-image: url(../images/background4.png);
     background-repeat: no-repeat;
@@ -89,9 +86,8 @@ header ul li a {
   }
 }
 
-@media (max-width:1120px)
-{
-  body{
+@media only screen and (max-width: 1120px) {
+  body {
     padding: 10px;
     background-image: url(../images/background5.png);
     background-repeat: no-repeat;
@@ -101,9 +97,8 @@ header ul li a {
   }
 }
 
-@media (max-width:1025px)
-{
-  body{
+@media only screen and (max-width: 1025px) {
+  body {
     padding: 10px;
     background-image: url(../images/background6.png);
     background-repeat: no-repeat;
@@ -113,8 +108,8 @@ header ul li a {
   }
 }
 
-@media (max-width: 580px) {
-  body{
+@media only screen and (max-width: 580px) {
+  body {
     padding: 10px;
     background-image: url(../images/background7.png);
     background-repeat: no-repeat;
@@ -124,9 +119,7 @@ header ul li a {
   }
 }
 
-@media (max-width: 365px) {
-
-  
+@media only screen and (max-width: 365px) {
   header .logo {
     margin-left: 5px;
     margin-top: 5px;

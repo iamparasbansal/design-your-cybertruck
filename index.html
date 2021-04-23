@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -9,6 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/popup.css">
     <link rel="stylesheet" href="./css/popup2.css">
+    <link rel="stylesheet" href="./css/popup3.css">
     <link rel="stylesheet" href="./css/main.css">
 
     <script src="./js/main.js"></script>
@@ -113,6 +113,63 @@
       </div>
     </div>
 
+    <div class="popup3-margins">
+      <div class="popup3" id="popup-3">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup3()">&times;</div>
+          <div class="popup-heading">
+            <span>
+              ENTER ACCOUNT DETAILS
+            </span>
+          </div>
+          <div class="popup-content">
+            <p class="popup-content-heading">FIRST NAME</p>
+            <input id="firstname" required></input>
+            <p class="popup-content-heading">LAST NAME</p>
+            <input id="lastname" required></input>
+            <p class="popup-content-heading">EMAIL ADDRESS</p>
+            <input id="email2" required></input>
+            <p class="popup-content-heading">PHONE NUMBER</p>
+            <input id="phone" required></input>
+          </div>
+          <div class="popup-heading">
+            <span>
+              PAYMENT (CARD)
+            </span>
+          </div>
+          <div class="popup-content">
+            <p class="popup-content-heading">NAME ON CARD</p>
+            <input id="nameoncard" required></input>
+            <p class="popup-content-heading">CARD NUMBER</p>
+            <input id="cardnumber" required></input>
+            <p class="popup-content-heading">EXPIRATION MONTH</p>
+            <input id="expirationmonth" required></input>
+            <p class="popup-content-heading">EXPIRATION YEAR</p>
+            <input id="expirationyear" required></input>
+            <p class="popup-content-heading">CVV</p>
+            <input id="cvv" required></input>
+            <p class="popup-content-heading">BILLING ZIP CODE</p>
+            <input id="zipcode" required></input>
+            <p class="popup-content-heading"></p>
+            <p class="popup-content-items">
+              I allow Tesla to save my payment instrument information for future transactions pursuant to the
+              <a href="https://www.tesla.com/about/legal#payment-terms"><u>Payment Terms for Services</u></a>
+            </p>
+            <button onclick="windowsalert()">Place Order</button>
+            <p class="popup-content-items">
+              By clicking "Place Order" I agree to the 
+              <a href="https://www.tesla.com/order/download-order-agreement?redirect=no&country=US&model_code=mp"><u>Cybertruck Pre-Order Agreement</u></a>, 
+              <a href="https://www.tesla.com/about/legal?redirect=no#supercharger-fair-use"><u>Supercharger Fair Use Policy</u></a>, 
+              the <a href="https://www.tesla.com/about/legal?redirect=no#privacy-statement"><u>Customer Privacy Agreement</u></a>, 
+              and consent to be contacted at the number provided with more information or offers about Tesla products. I understand these calls or texts may use automated dialing 
+              or pre-recorded messages. I understand my consent to be contacted is not a condition of purchase.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="main-content">
       <p class="main-content-heading">ORDER CYBERTRUCK</p>
       <br><br><br>
@@ -188,7 +245,7 @@
 
     <div class="main-content4">
       <div class="listItemsContainer">
-        <button onclick="windowsalert()">BUY NOW</button>
+        <button onclick="togglePopup3()">BUY NOW</button>
       </div>
     </div>
 

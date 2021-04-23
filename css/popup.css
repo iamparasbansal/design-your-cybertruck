@@ -1,99 +1,99 @@
 .popup .overlay {
-  position:fixed;
-  top:0px;
-  left:0px;
-  width:100vw;
-  height:100vh;
-  background:rgba(0,0,0,0.7);
-  z-index:1;
-  display:none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
 }
- 
+
 .popup .content {
-  position:absolute;
+  position: absolute;
   margin-top: 450px;
   margin-left: -60px;
-  transform:translate(-50%,-50%) scale(0);
-  background:#fff;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
   border-radius: 10px;
-  width:400px;
-  height:800px;
-  z-index:2;
-  text-align:center;
-  box-sizing:border-box;
-  font-family:"Open Sans",sans-serif;
+  width: 400px;
+  height: 800px;
+  z-index: 2;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
   overflow: auto;
 }
- 
+
 .popup .close-btn {
-  cursor:pointer;
-  position:absolute;
-  right:20px;
-  top:20px;
-  width:30px;
-  height:30px;
-  color:#000;
-  font-size:30px;
-  font-weight:600;
-  line-height:30px;
-  text-align:center;
-  border-radius:50%;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
 }
- 
+
 .popup.active .overlay {
-  display:block;
+  display: block;
 }
- 
+
 .popup.active .content {
-  transition:all 300ms ease-in-out;
-  transform:translate(-50%,-50%) scale(1);
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
 }
 
-.popup .content .popup-heading{
-    padding: 50px 40px 35px;
-    text-align: left;
-    font-size: 28px;
-    line-height: 36px;
+.popup .content .popup-heading {
+  padding: 50px 40px 35px;
+  text-align: left;
+  font-size: 28px;
+  line-height: 36px;
 }
 
-.popup .content .popup-content{
+.popup .content .popup-content {
   padding: 0 60px;
   text-align: left;
 }
 
-.popup .content .popup-content .popup-content-heading{
+.popup .content .popup-content .popup-content-heading {
   text-align: left;
   font-size: 22px;
   padding-top: 7px;
   padding-bottom: 14px;
 }
 
-.popup .content .popup-content .popup-content-items{
+.popup .content .popup-content .popup-content-items {
   text-align: left;
   padding-top: 14px;
   padding-bottom: 14px;
 }
 
-.popup .content .popup-content .popup-content-items a{
+.popup .content .popup-content .popup-content-items a {
   text-decoration: none;
   color: #545454;
   font-size: 17.5px;
   font-weight: 100;
 }
 
-.popup .content .popup-content .popup-content-items a:hover{
+.popup .content .popup-content .popup-content-items a:hover {
   text-decoration: none;
   color: #000000;
   font-size: 18px;
   font-weight: 100;
 }
 
-@media (max-width: 455px){
+@media only screen and (max-width: 455px) {
   .popup .content {
     position: absolute;
     margin-top: 310px;
     margin-left: -50px;
-    transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     background: #fff;
     border-radius: 10px;
     width: 310px;
@@ -101,17 +101,17 @@
     z-index: 2;
     text-align: center;
     box-sizing: border-box;
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans", sans-serif;
     overflow: auto;
   }
 }
 
-@media (max-width: 365px){
+@media only screen and (max-width: 365px) {
   .popup .content {
     position: absolute;
     margin-top: 280px;
     margin-left: -40px;
-    transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     background: #fff;
     border-radius: 10px;
     width: 310px;
@@ -119,18 +119,17 @@
     z-index: 2;
     text-align: center;
     box-sizing: border-box;
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans", sans-serif;
     overflow: auto;
   }
 }
 
-
-@media (max-width: 321px){
+@media only screen and (max-width: 321px) {
   .popup .content {
     position: absolute;
     margin-top: 250px;
     margin-left: -40px;
-    transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     background: #fff;
     border-radius: 10px;
     width: 250px;
@@ -138,43 +137,43 @@
     z-index: 2;
     text-align: center;
     box-sizing: border-box;
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans", sans-serif;
     overflow: auto;
   }
 
-  .popup .content .popup-heading{
+  .popup .content .popup-heading {
     padding: 40px 20px 15px;
     text-align: left;
     font-size: 18px;
     line-height: 30px;
   }
 
-  .popup .content .popup-content{
+  .popup .content .popup-content {
     padding: 0 30px;
     text-align: left;
   }
 
-  .popup .content .popup-content .popup-content-heading{
+  .popup .content .popup-content .popup-content-heading {
     text-align: left;
     font-size: 16px;
     padding-top: 5px;
     padding-bottom: 10px;
   }
-  
-  .popup .content .popup-content .popup-content-items{
+
+  .popup .content .popup-content .popup-content-items {
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
-  .popup .content .popup-content .popup-content-items a{
+
+  .popup .content .popup-content .popup-content-items a {
     text-decoration: none;
     color: #545454;
     font-size: 16px;
     font-weight: 100;
   }
-  
-  .popup .content .popup-content .popup-content-items a:hover{
+
+  .popup .content .popup-content .popup-content-items a:hover {
     text-decoration: none;
     color: #000000;
     font-size: 16px;
@@ -182,12 +181,12 @@
   }
 }
 
-@media (max-width: 282px){
+@media only screen and (max-width: 282px) {
   .popup .content {
     position: absolute;
     margin-top: 280px;
     margin-left: -40px;
-    transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     background: #fff;
     border-radius: 10px;
     width: 250px;
@@ -195,47 +194,46 @@
     z-index: 2;
     text-align: center;
     box-sizing: border-box;
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans", sans-serif;
     overflow: auto;
   }
 
-  .popup .content .popup-heading{
+  .popup .content .popup-heading {
     padding: 40px 20px 15px;
     text-align: left;
     font-size: 18px;
     line-height: 30px;
   }
 
-  .popup .content .popup-content{
+  .popup .content .popup-content {
     padding: 0 30px;
     text-align: left;
   }
 
-  .popup .content .popup-content .popup-content-heading{
+  .popup .content .popup-content .popup-content-heading {
     text-align: left;
     font-size: 16px;
     padding-top: 5px;
     padding-bottom: 10px;
   }
-  
-  .popup .content .popup-content .popup-content-items{
+
+  .popup .content .popup-content .popup-content-items {
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
-  .popup .content .popup-content .popup-content-items a{
+
+  .popup .content .popup-content .popup-content-items a {
     text-decoration: none;
     color: #545454;
     font-size: 16px;
     font-weight: 100;
   }
-  
-  .popup .content .popup-content .popup-content-items a:hover{
+
+  .popup .content .popup-content .popup-content-items a:hover {
     text-decoration: none;
     color: #000000;
     font-size: 16px;
     font-weight: 100;
   }
 }
- 
