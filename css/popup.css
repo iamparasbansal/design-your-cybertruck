@@ -88,4 +88,22 @@
   font-size: 18px;
   font-weight: 100;
 }
+
+@media (max-width: 365px){
+  .popup .content {
+    position: absolute;
+    margin-top: 280px;
+    margin-left: -40px;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    border-radius: 10px;
+    width: 310px;
+    height: 500px;
+    z-index: 2;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+    overflow: auto;
+  }
+}
  

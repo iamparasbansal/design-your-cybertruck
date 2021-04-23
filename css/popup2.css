@@ -66,4 +66,23 @@
     line-height: 25px;
 }
 
+@media (max-width: 365px){
+  .popup2 .content {
+    position: absolute;
+    margin-top: 300px;
+    transform: translate(-50%,-50%) scale(0);
+    background: #000000;
+    color: #ffffff;
+    border-bottom-right-radius: 30px;
+    width: 310px;
+    min-height: 20 0px;
+    z-index: 2;
+    text-align: center;
+    border: 7px solid #ffffff;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+    overflow: auto;
+  }
+}
+
  
